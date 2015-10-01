@@ -9,8 +9,8 @@ Use JavaScript to add new features and a richer, more compelling user interface 
 
 Topics include:
 
-  #Understanding the structure of JavaScript code
-  #Creating variables, functions, and loops
+# Understanding the structure of JavaScript code
+# Creating variables, functions, and loops
 Writing conditional code
 Sending messages to the console
 Working with different variable types and objects
