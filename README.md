@@ -9,15 +9,15 @@ Use JavaScript to add new features and a richer, more compelling user interface 
 
 Topics include:
 
-# Understanding the structure of JavaScript code
-# Creating variables, functions, and loops
-Writing conditional code
-Sending messages to the console
-Working with different variable types and objects
-Creating and changing DOM objects
-Event handling
-Working with timers
-Debugging JavaScript
-Building smarter forms
-Working with CSS, HTML5, and JavaScript
-Using regular expressions
+* Understanding the structure of JavaScript code
+* Creating variables, functions, and loops
+* Writing conditional code
+* Sending messages to the console
+* Working with different variable types and objects
+* Creating and changing DOM objects
+* Event handling
+* Working with timers
+* Debugging JavaScript
+* Building smarter forms
+* Working with CSS, HTML5, and JavaScript
+* Using regular expressions
