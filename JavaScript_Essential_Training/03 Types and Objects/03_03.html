@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03 Types and Objects</title>
+    <style>
+        pre{
+            font-size: 20px;
+            font-weight: 100;
+            background: rgba(125,125,0,.25);
+            display: inline-block;
+            padding: 35px 45px 35px 0;
+            border:1px solid rgba(0,125,0,.75);
+            color: #006;
+            text-shadow: 1px 1px #ff0;
+        }
+        h2 {
+            font-size: 30px;
+            color: #006600;
+            text-shadow: 2px 1px 2px #999;
+        }
+        a:link{
+            color: #030;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#060;
+            text-shadow: 0 0 2px #0f0;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<h1><small>03 Types and Objects</small> Numbers</h1>
+<p>Working With JavaScript Numbers</p>
+<h2>Numbers</h2>
+
+<pre>
+    // Double quot
+    var str;
+    str = "This is a string.";
+    console.log(str);
+
+    // Single quot
+    str = 'This is also a string.';
+    console.log(str);
+
+    // Mixed quot
+    str = "I don't love it.";
+    console.log(str);
+
+    // Mixed quot
+    str = 'Do you know "Murad Takla"?';
+    console.log(str);
+
+    // Mixed quot
+    str = "No I don't know \"Murad Takla\"?";
+    console.log(str);
+
+    /*String Functions*/
+    str = "Let's work with some string Functions.";
+    // string length
+    console.log(str.length);
+
+    // string toUpperCase
+    console.log("Uppercase: " + str.toUpperCase());
+
+    // string toLowerCase
+    console.log("LowerCase: " +str.toLowerCase());
+
+    // string split
+    var sentence = "This is a Sentence.";
+
+    var word = sentence.split(" ");
+    console.log(sentence);//This is a Sentence.
+
+    console.log(word);// [This,is,a,Sentence.]
+
+    console.log(sentence + " = " +word);//This is a Sentence.=[This,is,a,Sentence.]
+
+    // Finding Index of an string
+    str = "Hi! I'm one of you!";
+    var position = str.indexOf("a");// will not found will show -1
+    console.log(position +' Return Negative value if not found!');
+    position = str.indexOf("you"); // will found and show 15
+    console.log(position +' Return Index Number found!');
+
+    // lastIndexOf() Finds last value
+    var first = str.indexOf("o"); //8
+    var last = str.lastIndexOf("o"); //16
+    console.log(first +' is First value & '+ last +' is Last value!');
+
+    /*
+    ************************************************************
+    * Use indexOf() to find series of position of a give string
+    ************************************************************
+    */
+    str = "To be or not to be, but what is going to be!";
+    var count = 0;
+    var val = "";
+    do{
+        count = str.indexOf("be", count+1);
+        if(count == -1){break;}
+        if (count == str.lastIndexOf("be")){
+            val = val + count + ". " ;
+        }else val = val + count + ", " ;
+    }while( true);
+    console.log("The string index found is: " + val);
+
+    // working with 'Slice'.
+    str = "Work with slice";
+    console.log(str);
+    var lnth;
+    lnth = str.length;
+    var slice;
+    slice = str.slice(10, lnth);
+    console.log(slice);// slice
+    /// .substring() & .substr();
+
+    /* String Comparison*/
+    var str1="One"; var str2="one";
+    // will return Not Equal!
+    if (str1 == str2) {
+        console.log('Are Equal');
+    } else {
+        console.log("Not Equal");
+    }
+
+    // Comparing after conversion
+    if(str1.toLowerCase() == str2.toLowerCase()){
+        console.log("Are Equal");
+    } else {
+        console.log("Not Equal");
+    }
+</pre>
+
+<script>
+    // Double quot
+    var str;
+    str = "This is a string.";
+    console.log(str);
+
+    // Single quot
+    str = 'This is also a string.';
+    console.log(str);
+
+    // Mixed quot
+    str = "I don't love it.";
+    console.log(str);
+
+    // Mixed quot
+    str = 'Do you know "Murad Takla"?';
+    console.log(str);
+
+    // Mixed quot
+    str = "No I don't know \"Murad Takla\"?";
+    console.log(str);
+
+    /*String Functions*/
+    str = "Let's work with some string Functions.";
+    // string length
+    console.log(str.length);
+
+    // string toUpperCase
+    console.log("Uppercase: " + str.toUpperCase());
+
+    // string toLowerCase
+    console.log("LowerCase: " +str.toLowerCase());
+
+    // string split
+    var sentence = "This is a Sentence.";
+
+    var word = sentence.split(" ");
+    console.log(sentence);//This is a Sentence.
+
+    console.log(word);// [This,is,a,Sentence.]
+
+    console.log(sentence + " = " +word);//This is a Sentence.=[This,is,a,Sentence.]
+
+    // Finding Index of an string
+    str = "Hi! I'm one of you!";
+    var position = str.indexOf("a");// will not found will show -1
+    console.log(position +' Return Negative value if not found!');
+    position = str.indexOf("you"); // will found and show 15
+    console.log(position +' Return Index Number found!');
+
+    // lastIndexOf() Finds last value
+    var first = str.indexOf("o"); //8
+    var last = str.lastIndexOf("o"); //16
+    console.log(first +' is First value & '+ last +' is Last value!');
+
+    /*
+    ************************************************************
+    * Use indexOf() to find series of position of a give string
+    ************************************************************
+    */
+    str = "To be or not to be, but what is going to be!";
+    var count = 0;
+    var val = "";
+    do{
+        count = str.indexOf("be", count+1);
+        if(count == -1){break;}
+        if (count == str.lastIndexOf("be")){
+            val = val + count + ". " ;
+        }else val = val + count + ", " ;
+    }while( true);
+    console.log("The string index found is: " + val);
+
+    // working with 'Slice'.
+    str = "Work with slice";
+    console.log(str);
+    var lnth;
+    lnth = str.length;
+    var slice;
+    slice = str.slice(10, lnth);
+    console.log(slice);// slice
+    /// .substring() & .substr();
+
+    /* String Comparison*/
+    var str1="One"; var str2="one";
+    // will return Not Equal!
+    if (str1 == str2) {
+        console.log('Are Equal');
+    } else {
+        console.log("Not Equal");
+    }
+
+    // Comparing after conversion
+    if(str1.toLowerCase() == str2.toLowerCase()){
+        console.log("Are Equal");
+    } else {
+        console.log("Not Equal");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03 Types and Objects</title>
+    <style>
+        pre{
+            font-size: 20px;
+            font-weight: 100;
+            background: rgba(125,125,0,.25);
+            display: inline-block;
+            padding: 35px 45px 35px 0;
+            border:1px solid rgba(0,125,0,.75);
+            color: #006;
+            text-shadow: 1px 1px #ff0;
+        }
+        h2 {
+            font-size: 30px;
+            color: #006600;
+            text-shadow: 2px 1px 2px #999;
+        }
+        a:link{
+            color: #030;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#060;
+            text-shadow: 0 0 2px #0f0;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<h1><small>03 Types and Objects</small> Arrays</h1>
+<p>Working With JavaScript Arrays</p>
+<h2>Arrays</h2>
+
+<p>lorem</p>
+
+<p>lorem</p>
+
+<p>lorem</p>
+
+<p>lorem</p>
+
+<p>lorem</p>
+<pre>
+    /* Declare Array in 3 different ways*/
+    // Method 1
+    var a1 = [];// declare a empty array object
+    console.log(a1); // output: []
+
+    // Method2
+    var a2 = new Array();// declare a empty array object
+    console.log(a2); // output: []
+
+    // Method3
+    var a3 = Array();// declare a empty array object
+    console.log(a3); // output: []
+
+    var a4 = Array(4);
+    console.log(a4); // output: []
+    var a5 = [1,2,"Three", "Four", "Five", "Two", "One"];
+    console.log(a5);
+    /* Property */
+    //Property is Information we can get to from a object about them!
+    console.log(a5.length);
+    /*Method*/
+    // Method is an function that belongs to an object.
+    var a6 = a5.reverse()
+    console.log( "reverse :  "+a6);
+    var a7 = a5.sort();
+    console.log( "sort : " + a7);
+    var a8 = a7.join()
+    console.log( "join : " + a8 + " "+ typeof (a8));
+    console.log(a8[7]); // as it's a string value so get a character
+    var tag = document.getElementsByTagName("p");
+    console.log(tag);
+    console.log(tag.length);
+    console.log(tag[0].innerHTML);
+    tag[2].innerHTML = tag[0].innerHTML;
+</pre>
+
+<script>
+    /* Declare Array in 3 different ways*/
+    // Method 1
+    var a1 = [];// declare a empty array object
+    console.log(a1); // output: []
+
+    // Method2
+    var a2 = new Array();// declare a empty array object
+    console.log(a2); // output: []
+
+    // Method3
+    var a3 = Array();// declare a empty array object
+    console.log(a3); // output: []
+
+    var a4 = new Array(4);
+    console.log(a4); // output: []
+    var a5 = [1,2,"Three", "Four", "Five", "Two", "One"];
+    console.log(a5);
+    /* Property */
+    //Property is Information we can get to from a object about them!
+    console.log(a5.length);
+    /*Method*/
+    // Method is an function that belongs to an object.
+    var a6 = a5.reverse();
+    console.log( "reverse :  "+a6);
+    var a7 = a5.sort();
+    console.log( "sort : " + a7);
+    var a8 = a7.join();
+    console.log( "join : " + a8 + " "+ typeof (a8));
+    console.log(a8[7]); // as it's a string value so get a character
+    var tag = document.getElementsByTagName("p");
+    console.log(tag);
+    console.log(tag.length);
+    console.log(tag[0].innerHTML);
+    tag[2].innerHTML = tag[0].innerHTML;
+
+</script>
+
+</body>
+</html>

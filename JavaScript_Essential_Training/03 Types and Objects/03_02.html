@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03 Types and Objects</title>
+    <style>
+        pre{
+            font-size: 20px;
+            font-weight: 100;
+            background: rgba(125,125,0,.25);
+            display: inline-block;
+            padding: 35px 45px 35px 0;
+            border:1px solid rgba(0,125,0,.75);
+            color: #006;
+            text-shadow: 1px 1px #ff0;
+        }
+        h2 {
+            font-size: 30px;
+            color: #006600;
+            text-shadow: 2px 1px 2px #999;
+        }
+        a:link{
+            color: #030;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#060;
+            text-shadow: 0 0 2px #0f0;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<h1><small>03 Types and Objects</small> Numbers</h1>
+<p>Working With JavaScript Numbers</p>
+<h2>Numbers</h2>
+
+<pre>
+    var foo = 5;
+    var bar = 4;
+    console.log(foo+bar);    //9
+
+    var num = 5;
+    var num1 = "5";
+    console.log(num+num1); // 55
+
+    var num2 = 5;
+    var num3 = "text";
+    console.log(num2*num3); // NaN
+
+    // checking Number value
+    var num4 = Number(num3);// Can not convert String to Number
+    console.log(num4); // NaN
+
+    if(isNaN(num3)){
+        console.log(num3 + " : is Not a Number!");
+    }
+</pre>
+
+<script>
+    var foo = 5;
+    var bar = 4;
+    console.log(foo+bar);    //9
+
+    var num = 5;
+    var num1 = "5";
+    console.log(num+num1); // 55
+
+    var num2 = 5;
+    var num3 = "text";
+    console.log(num2*num3); // NaN
+
+    // converting Number value
+    var num4 = Number(num3);// Can not convert String to Number
+    console.log(num4); // NaN
+
+    // checking Number value
+    if(isNaN(num3)){
+        console.log(num3 + " : is Not a Number!");
+    }
+    // checking Number value
+    var display = isNaN(num3)? "It's a Number." : "It's not a Number";
+    console.log(display);
+
+    // Some Math Objects
+    var num5 = 50.23;
+    var num6 = 50.99;
+    console.log( Math.round(num5)+" is  Math.round of 50.23");// 50
+    console.log( Math.round(num6)+" is  Math.round of 50.99");//51
+
+    console.log( Math.floor(num5)+" is Math.floor of 50.23");//50
+    console.log( Math.floor(num6)+" is Math.floor of 50.99");//50
+
+    //gets the maximum value
+    var max = Math.max(num2,num5,num6);
+    console.log("Maximum Value is : " + max);
+
+    //gets the Minimum value
+    var min = Math.min(num2,num5,num6);
+    console.log("Maximum Value is : " + min);
+
+    var pi = num.PI;
+    console.log("Math PI is : " + pi);
+
+    var num7 = 2;
+    var num8 = 3;
+    console.log( Math.log(num7) +" Math.log");
+    console.log( Math.log(num8) +" Math.log");
+
+    console.log( Math.sqrt(num7) +" Math.sqrt");
+    console.log( Math.log(num8));
+</script>
+
+</body>
+</html>
