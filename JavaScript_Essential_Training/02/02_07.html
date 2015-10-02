@@ -11,11 +11,13 @@
             display: inline-block;
             padding: 35px 45px 35px 0;
             border:1px solid rgba(0,125,0,.75);
-            color: #007;
+            color: #006;
+            text-shadow: 1px 1px #ff0;
         }
-        h2{
+        h2 {
             font-size: 30px;
-            color:#006600;
+            color: #006600;
+            text-shadow: 2px 1px 2px #999;
         }
     </style>
 </head>
@@ -42,10 +44,24 @@
 
 <h2>For Loop</h2>
 <pre>
-// For loop
+    // For loop
     for(n = 1;n<=5; n++){
         console.log( "For loop # "+ n);
     }
+
+    /////////////////////////////////////////
+    // For loop with break and continue
+    for(n = 1;n<=20; n++){
+        if(n == 10){
+            console.info("Breaks the loop!");
+            break; // ends loop at 10;
+        }
+        if(n%2==0){
+            continue;// skips all even value
+        }
+        console.log( n + " is an Odd Number");
+    }
+
 </pre>
 
 <script>
@@ -66,24 +82,18 @@
         console.log( "For loop # "+ n);
     }
 
+    /////////////////////////////////////////
     // For loop with break and continue
-    // For loop
     for(n = 1;n<=20; n++){
-
         if(n == 10){
             console.info("Breaks the loop!");
             break; // ends loop at 10;
         }
-
         if(n%2==0){
             continue;// skips all even value
         }
-
         console.log( n + " is an Odd Number");
-
-
     }
-
 </script>
 
 </body>
