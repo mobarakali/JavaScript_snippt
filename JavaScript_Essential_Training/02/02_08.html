@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Functions</title>
+    <style>
+        pre{
+            font-size: 20px;
+            font-weight: 100;
+            background: rgba(125,125,0,.25);
+            display: inline-block;
+            padding: 35px 45px 35px 0;
+            border:1px solid rgba(0,125,0,.75);
+            color: #006;
+            text-shadow: 1px 1px #ff0;
+        }
+        h2 {
+            font-size: 30px;
+            color: #006600;
+            text-shadow: 2px 1px 2px #999;
+        }
+        a:link{
+            color: #030;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#060;
+            text-shadow: 0 0 2px #0f0;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<h1>JavaScript Functions</h1>
+<p>Working With JavaScript Functions</p>
+<h2>Functions</h2>
+<p>We have used functions in previous chapters <a href="02_06.html">Working With JavaScript Operators</a> and also use <strong>alert()</strong> which is a built in functions.</p>
+<pre>
+    var n=0; // global variable
+    function vGlobal(a){
+        n = a; //
+        //console.log(n)
+        return n;
+    }
+
+    vGlobal(4);
+    console.log(n);// output:4
+
+    ///////////////////////////////////////
+    // Local variable: will work inside function
+    function vLocal(a){
+        var m = a; //local variable
+       // console.log(m)
+        return m;
+    }
+    vLocal(44);
+   // console.log(m);// Uncaught ReferenceError: m is not defined
+
+    ///////////////////////////////////////
+    // Local variable: will work inside function
+    var p;
+    function vBoth(a){
+        var p = a; //Re Decleared as local
+       // console.log(p)
+        return p;
+    }
+    vBoth(5);
+    console.log(p);// output: Undefined
+</pre>
+
+<script>
+    var n=0; // global variable
+    function vGlobal(a){
+        n = a; //
+        //console.log(n)
+        return n;
+    }
+
+    vGlobal(4);
+    console.log(n);// output:4
+
+    ///////////////////////////////////////
+    // Local variable: will work inside function
+    function vLocal(a){
+        var m = a; //local variable
+       // console.log(m)
+        return m;
+    }
+    vLocal(44);
+   // console.log(m);// Uncaught ReferenceError: m is not defined
+
+    ///////////////////////////////////////
+    // Local variable: will work inside function
+    var p;
+    function vBoth(a){
+        var p = a; //Re Decleared as local
+       // console.log(p)
+        return p;
+    }
+    vBoth(5);
+    console.log(p);// output: Undefined
+
+</script>
+
+</body>
+</html>
