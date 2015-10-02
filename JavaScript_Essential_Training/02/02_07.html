@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Loop</title>
+    <style>
+        pre{
+            font-size: 20px;
+            font-weight: 100;
+            background: rgba(125,125,0,.25);
+            display: inline-block;
+            padding: 35px 45px 35px 0;
+            border:1px solid rgba(0,125,0,.75);
+            color: #007;
+        }
+        h2{
+            font-size: 30px;
+            color:#006600;
+        }
+    </style>
+</head>
+<body>
+<h1>JavaScript Loop</h1>
+<p>Working With JavaScript Loops</p>
+<h2>While Loop</h2>
+<pre>
+   // While loop
+    var n = 1;
+    while (n<=5){
+        console.log( "While Loop # "+ n++);
+    }
+</pre>
+
+<h2>Do While Loop</h2>
+<pre>
+   // Do While loop
+   n = 1;
+   do{
+       console.log( "Do While loop # "+ n++);
+   }while (n<=5);
+</pre>
+
+<h2>For Loop</h2>
+<pre>
+// For loop
+    for(n = 1;n<=5; n++){
+        console.log( "For loop # "+ n);
+    }
+</pre>
+
+<script>
+    // While loop
+    var n = 1;
+    while (n<=5){
+        console.log( "While Loop # "+ n++);
+    }
+
+   // Do While loop
+   n = 1;
+   do{
+       console.log( "Do While loop # "+ n++);
+   }while (n<=5);
+
+    // For loop
+    for(n = 1;n<=5; n++){
+        console.log( "For loop # "+ n);
+    }
+
+    // For loop with break and continue
+    // For loop
+    for(n = 1;n<=20; n++){
+
+        if(n == 10){
+            console.info("Breaks the loop!")
+            break; // ends loop at 10;
+        }
+
+        if(n%2==0){
+            continue;// skips all even value
+        }
+
+        console.log( n + " is an Odd Number");
+
+
+    }
+
+</script>
+
+</body>
+</html>

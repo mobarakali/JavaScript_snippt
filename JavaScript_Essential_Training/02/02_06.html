@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Operator</title>
+    <style>
+        pre{
+            font-size: 20px;
+            font-weight: bold;
+            background: rgba(200,200,200,.25);
+            display: inline-block;
+            padding: 10px;
+            border:2px solid rgba(125,125,125,.75);
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<h1>JavaScript Operator</h1>
+<p>Working With JavaScript Operators</p>
+<pre>
+     var a = 1;
+    var b = "1";
+    // First Condition
+    if(a==b){
+        alert("(a == b): a equals b.");
+    }
+    // Another condition
+    if(a===b){
+        alert("(a === b): a equals b.");
+    }else{
+        alert("(a === b): a not-equals b.");
+    }
+
+    // Using And (&&)
+
+    if(a==b && a===b){
+        alert( "a & b are very much similar!")
+    }
+    // or we can write
+    if( (a==b) && (a===b) ){
+        alert( "a & b are very much similar!")
+    }
+
+    // Again we can write
+    if(
+            (a==b)
+            &&
+            (a===b)
+    ){
+        alert( "a & b are very much similar!")
+    }
+
+    // using or (||)
+    if( (a==b) || (a===b) ){
+        alert( "a & b are very much similar!")
+    }
+</pre>
+
+<script>
+    var a = 1;
+    var b = "1";
+    ////////////////////////////////
+    // First Condition
+    if(a==b){
+        console.log("(a == b): a equals b.");
+    }
+    ////////////////////////////////
+    // Another condition
+    if(a===b){
+        console.log("(a === b): a equals b.");
+    }else{
+        console.log("(a === b): a not-equals b.");
+    }
+
+    ////////////////////////////////
+    // Using And (&&)
+
+    if(a==b && a===b){
+        console.log( "a & b are very much similar!");
+    }
+    ////////////////////////////////
+    // or we can write
+    if( (a==b) && (a===b) ){
+        console.log( "a & b are very much similar!");
+    }
+
+    ////////////////////////////////
+    // Again we can write
+    if(
+            (a==b)
+            &&
+            (a===b)
+    ){
+        console.log( "a & b are very much similar!");
+    }
+
+    ////////////////////////////////
+    // using or (||)
+    if( (a==b) || (a===b) ){
+        console.log( "a & b are very much similar!");
+    }
+
+    // Counting LeapYear
+function lip(a){
+/*    var year = 1900;*/
+    var year = a; // get and assign value from function parameter
+    var leapyear = year%4; // Leap year is divided by 4
+    var leapt = year%400; // every 400 is also leap year
+
+    if(leapyear==0){
+    // checks if its normal leap year
+        if(year%100==0){
+        // when a year is divided by 100 it may not be a leap year
+            if(leapt==0){
+            // when divided by 100 then it must be divided by 400 too
+                alert(year +": is  Leapyear");
+                // divided by 400 and leap year
+            }else{
+            // not divided by 400 so not a leap year
+                alert( year +": is NOt LeapYear");
+            }
+        }else{
+        // not divided by 100 and is a leap year
+            alert(year +": is  Leapyear");
+        }
+    }else{
+    // not divided by 4 so not a leapyear
+        alert( year +": is NOt LeapYear");
+    }
+}
+
+//Ternary operator
+    function lpr(a) {
+        /*    var year = 1900;*/
+        var year = a; // get and assign value from function parameter
+        var leapyear = year%4; // Leap year is divided by 4
+        var leapt = year%400; // every 400 is also leap year
+
+        (leapyear==0)?
+                (year%100==0)?
+                        (leapt==0)?
+                                alert(year +": is  Leapyear")
+                                :alert( year +": is NOt LeapYear")
+                        :alert(year +": is  Leapyear")
+                :alert( year +": is NOt LeapYear");
+    }
+// lets have some output
+    lpr(1900);    lpr(2000);    lpr(1904);
+
+</script>
+
+</body>
+</html>
