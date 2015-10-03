@@ -195,16 +195,18 @@
     * Use indexOf() to find series of position of a give string
     ************************************************************
     */
-    str = "To be or not to be, but what is going to be!";
+    str = "be or not to be, but what is going to be, be, be!";
     var count = 0;
-    var val = "";
-    do{
+    var val =String( str.indexOf("be"));// Make it string for concatenation.
+    var replace;
+    while(true){
         count = str.indexOf("be", count+1);
         if(count == -1){break;}
         if (count == str.lastIndexOf("be")){
-            val = val + count + ". " ;
-        }else val = val + count + ", " ;
-    }while( true);
+            val = val +" and "+ count + "." ;// adding and and full stop at end.
+        }else val = val + ", "+ count  ;
+    }
+
     console.log("The string index found is: " + val);
 
     // working with 'Slice'.
