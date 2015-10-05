@@ -1,0 +1,26 @@
+pre{
+    font-size: 20px;
+    font-weight: 100;
+    background: rgba(125,125,0,.25);
+    display: table;
+    padding: 15px;
+    border:1px solid rgba(0,125,0,.75);
+    color: #006;
+    text-shadow: 1px 1px #ff0;
+    margin: 10px auto;
+}
+h2 {
+    font-size: 30px;
+    color: #006600;
+    text-shadow: 2px 1px 2px #999;
+    margin: 0;
+}
+a:link{
+    color: #030;
+    text-decoration: none;
+}
+a:hover{
+    color:#060;
+    text-shadow: 0 0 2px #0f0;
+    text-decoration: none;
+}
